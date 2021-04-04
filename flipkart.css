@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+ body{
+     background:#eee;
+     font-family: Roboto,Arial,sans-serif;
+     letter-spacing:0;
+ }
+ #headerblock{
+     background-color: #2874f0;
+     height:56px;
+ }
+ #headerblock article{
+     display:flex;
+     width:70%;
+     height:56px;
+     margin:0 auto;
+     /* background-color: pink; */
+     color:white;
+     align-items:center;
+
+ }
+ .leftblock{
+     width:70%;
+     display:flex;
+}
+.rightblock{
+    width:30%;
+}
+ 
+.logoblock{
+    width:15%;
+    display:flex;
+    flex-direction: column;
+}
+.searchblock{
+    width:85%;
+
+}
+.parentlogo img{
+    width:75px;
+}
+.explore{
+color:#f0f0f0;
+}
+.plus{
+    color:#ffe500;
+    font-weight:600;
+    margin-right: 2px;
+}
+.logoblock a{
+    text-decoration: none;
+    font-style:italic ;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.childlogo img{
+    width:10px;
+}
+
+/*----------search block css strtd here------*/
+.searchblock form{
+    display:flex;
+}
+
+.searchblock form input{
+    width:95%;
+    height:40px;
+    padding:0 0px 0 30px;
+    border-radius: 2px;
+    border:none;
+}
+
+::placeholder{
+    font-size:13px;
+}
+.searchicon{
+    position:relative;
+}
+.searchblock i{
+    color:#2874f0;
+    font-size: 20px;
+    font-weight:600;
+    position:absolute;
+    top:12px;
+    left:-35px;
+}
+/* ---------search block right ends here---------- */
+
+
+/* -------right block header css---------- */
+.rightblock{
+    width:30%;
+    display:flex;
+
+}
+.rightblock > ul{
+    list-style:none;
+    display:flex;
+    position: relative;
+}
+.rightblock >ul li{
+    margin:0 30px;
+}
+.rightblock > ul li a{
+    color:#fff;
+    text-decoration:none;
+    text-transform: capitalize;
+}
+.rightblock .login{
+    background-color: #fff;
+    color:#2874f0;
+    padding:8px 50px;
+    font-weight: bold;
+
+}
+.dropdown{
+    position:absolute;
+    list-style: none;
+    background: #fff;
+    top:37px;
+    width:300px;
+    display:none;
+    right:130px;
+    z-index:1;
+}
+.dropdown li{
+    margin:0 !important;
+}
+.dropdown li a{
+    padding: 0;
+    margin:0;
+    color:#111 !important;
+    padding:12px 18px;
+    display:inline-block;
+    width:100%;
+    border-bottom:1px solid #eee;
+}
+
+.rightblock ul li:hover > .dropdown{
+    display:block;
+
+}
+.dropdownaside{
+    position:relative;
+}
+.arrow-up{
+    
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+    border-right:12px solid transparent;
+    height:0;
+    width:0;
+    position:absolute;
+    top:-8px;
+    margin:auto;
+    left:44%;
+}
+.new{
+    position:relative;
+    display: inline-block;
+    
+    
+}
+.nwe{
+    position:absolute;
+    left:200px;
+    top:0px;
+    }
+i{
+    color:blue;
+    padding:0 20px 0 0;
+}
+#morearrow i{
+    position:relative;
+    color:#fff;
+    top:100px;
+    
+}
+#moredown{
+    position:absolute;
+    left:270px;
+    color:white;
+    top:3px;
+}
+#cartp{
+    position:absolute;
+    top:1px;
+    left:93%;
+    color:#fff;
+}
+#cartpink{
+    position:absolute;
+    left:310px;
+    color:#fff;
+}
+#cartpink i:hover{
+    color:white;
+}
+
+/* -----------right block header css ends here------------- */
+
+/* ------------offer block strts--------------*/
+#offerblock{
+    border-bottom:1px solid #ccc;
+    background:#fff;
+    height:110px;
+}
+#offerblock article{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    height:110px;
+    align-items: center;
+}
+#offerblock article div{
+    flex:1;
+    font-size:15px;
+    text-transform: capitalize;
+}
+#offerblock article div img{
+    width:70px;
+}
+#offerblock article div a{
+    display:flex;
+    flex-direction: column;
+    text-decoration:none;
+    color:black;
+    font-size:13px;
+    font-weight: 600;
+}
+/* ----------offer block ends--------- */
+
+/* #menumiddle strts here */
+#menumiddle{
+    width:100%;
+    background-color: #fff;
+    height:50px;
+    border-bottom:1px solid #ccc;
+}
+#menumiddle nav{
+    width:90%;
+    margin:0 auto;
+    height:50px;
+    display:flex;
+    align-items:center;
+}
+#menumiddle nav > ul{
+    list-style: none;
+    display: flex;
+    width:100%;
+    text-align: center;
+}
+#menumiddle nav > ul li{
+    margin-right:45px;
+    position:relative;
+}
+#menumiddle nav > ul li a{
+    color:#111;
+    text-transform: capitalize;
+    text-decoration:none;
+    font-size: 13px;
+    font-weight:bolder;
+    letter-spacing: 0.3px;
+}
+#menumiddle i{
+    position:relative;
+    top:3px;
+    left:9px;
+
+}
+.megamenu{
+    position: absolute;
+    width:1200px !important;
+    background-color: #fff;
+    display:none;
+    height:80vh;
+    top:35px;
+    text-align:left;
+}
+.megamenu div{
+    flex:1;
+}
+.megamenu div:nth-child(odd){
+    background-color: #fff;
+}
+.megamenu div:nth-child(even){
+    background-color: #efefef;
+}
+.megamenu ul{
+    list-style: none;
+}
+.megamenu ul li{
+    margin:10px 0px !important;
+} 
+.megamenu ul li a{
+    padding:1px 5px;
+    display:block;
+    font-weight: normal !important;
+    font-size:8px;
+
+}
+#menumiddle ul li:hover > .megamenu{
+    display:flex;
+}
+#elec{
+    position:relative;
+    color:#ccc;
+    left:500px;
+}
+/* ----------slide image starts here-------- */
+/* #slideimage article img{
+    position:relative;
+    top:5px;
+    width:100%;
+    height:250px;
+    object-fit:cover;
+} */
+
+/* zen tag= li*3>a{login} */
+/* dont use select bcz it is used only in forms */
